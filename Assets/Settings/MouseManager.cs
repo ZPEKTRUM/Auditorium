@@ -21,7 +21,7 @@ public class MouseManager : MonoBehaviour
 
     void Update()
     {
-        // On rcupre si le bouton gauche est press ou pas
+        // On récupère si le bouton gauche est pressé ou pas
         bool isButtonPressed;
         isButtonPressed = _mouseClick.action.IsPressed();
         //Debug.Log($"Left button : {isButtonPressed}");
@@ -38,7 +38,7 @@ public class MouseManager : MonoBehaviour
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
         Debug.DrawRay(ray.origin, ray.direction * 10, Color.green);
 
-        // On crit le nom du collider que l'on vient de toucher
+        // On écrit le nom du collider que l'on vient de toucher
         if (hit.collider != null)
         {
             Debug.Log(hit.collider.name);
@@ -47,7 +47,7 @@ public class MouseManager : MonoBehaviour
             {
                 Cursor.SetCursor(_resizeIcon, Vector2.zero, CursorMode.ForceSoftware);
 
-                // Ici le curseur est au dessus du cercle violet + le joueur a cliqu
+                // Ici le curseur est au dessus du cercle violet + le joueur a cliqué
                 if (isButtonPressed)
                 {
                     _currentResizeCircle = hit.collider.gameObject;
@@ -62,7 +62,7 @@ public class MouseManager : MonoBehaviour
             {
                 Cursor.SetCursor(_moveIcon, Vector2.zero, CursorMode.ForceSoftware);
 
-                // Ici le curseur est au dessus du cercle violet + le joueur a cliqu
+                // Ici le curseur est au dessus du cercle violet + le joueur a cliqué
                 if (isButtonPressed)
                 {
                     _currentMoveCircle = hit.collider.gameObject;
@@ -83,8 +83,8 @@ public class MouseManager : MonoBehaviour
         // On met à jour nos cercles
         if (_currentMoveCircle != null)
         {
-            // Pour bouger l'effector on doit dplacer l'objet par rapport  la position du curseur.
-            // Pour ça on demande à la camera de nous fournir la position du monde pour notre coordonne de souris
+            // Pour bouger l'effector on doit déplacer l'objet par rapport à la position du curseur.
+            // Pour ça on demande à la camera de nous fournir la position du monde pour notre coordonnée de souris
             Vector3 pos = _camera.ScreenToWorldPoint(mousePosition);
             Debug.Log(pos);
             // Le ScreenToWorldPoint nous donne un Z=-10 qui est pas top pour notre jeu, on retravail donc ce Z avant de le claquer dans la nouvelle position de notre objet
