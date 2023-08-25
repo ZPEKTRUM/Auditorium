@@ -49,7 +49,7 @@ MonoBehaviour:
   _camera: {fileID: 0}
   _mousePos: {fileID: -6800581870910151822, guid: 9bdce83e0ee1df144a814379b8346efd, type: 3}
   _mouseClick: {fileID: -3627643773198974169, guid: 9bdce83e0ee1df144a814379b8346efd, type: 3}
-  _resizeIcon: {fileID: 2800000, guid: 7a9a0dd7570af2745a00bd060fbda302, type: 3}
+  _resizeIcon: {fileID: 2800000, guid: 3044446006d994f4cafbb545084e6e6b, type: 3}
   _moveIcon: {fileID: 2800000, guid: 7a9a0dd7570af2745a00bd060fbda302, type: 3}
 --- !u!1 &2810872839928043947
 GameObject:

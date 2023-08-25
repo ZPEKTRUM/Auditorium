@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 449186350521049553}
   - component: {fileID: 7892081899652622770}
   - component: {fileID: 4252136030933495043}
+  - component: {fileID: 6228477520693225903}
   - component: {fileID: 1800655718027431650}
   - component: {fileID: 5160671628863194449}
   m_Layer: 0
@@ -246,7 +247,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 69a4eaf1f68563f409cba56e43b839b9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0
   m_Pitch: 0.04
   Loop: 1
   Mute: 0
@@ -330,6 +331,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6228477520693225903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876840765991191918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa894fccd47899408a349d2dfa35616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _validationThreshold: 1
+  _objectiveTime: 5
+  _audio: {fileID: 4252136030933495043}
+  _activatedColor: {r: 1, g: 1, b: 1, a: 0}
+  _desactivatedColor: {r: 0, g: 0, b: 0, a: 0}
+  _jauges:
+  - {fileID: 431272489893149826}
+  - {fileID: 1674638179007012202}
+  - {fileID: 4169507771941936800}
+  - {fileID: 5902357077265947883}
+  - {fileID: 1591017010640575033}
+  _particleCount: 0
+  _currentTime: 0
+  _currentPercentage: 0
 --- !u!114 &1800655718027431650
 MonoBehaviour:
   m_ObjectHideFlags: 0
